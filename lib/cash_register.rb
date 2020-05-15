@@ -15,6 +15,8 @@ class CashRegister
     if discount != 0
       @total = (@total - (@total * @discount.to_f)).to_i
       "After the discount, the total comes to $#{total}."
+    else
+      "There is no discount to apply."
   end
 
   def items
